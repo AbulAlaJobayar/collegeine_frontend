@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
+import { Rating } from '@smastrom/react-rating'
 
-const HeaderCard = ({item}) => {
-    console.log(item)
-    const {image,_id,college_name,admission_date,event,sports,researchers}=item
-    
-  return (
-    <>
-      <div className="card w-full bg-base-100 shadow-xl">
+import '@smastrom/react-rating/style.css'
+
+const CollegeCard = ({item}) => {
+    const {image,_id,college_name,admission_date,event,sports,researchers,rating}=item
+    return (
+        <div>
+           <div className="card w-full bg-base-100 shadow-xl">
         <figure>
           <img
             src={image}
@@ -46,17 +47,18 @@ const HeaderCard = ({item}) => {
                 {sports}
               </p>
             </div>
+            <Rating style={{ maxWidth: 100 }} value={rating}  />
             <div className="bg-[#ff6900] text-white py-2 px-4 rounded-full inline-block mt-4">
-            <Link to={`/viewdetails/${_id}`}>Details</Link>
+            <Link to={`/details/${_id}`}>Details</Link>
              
             </div>
           </div>
 
           {/* card body end */}
         </div>
-      </div>
-    </>
-  );
+      </div> 
+        </div>
+    );
 };
 
-export default HeaderCard;
+export default CollegeCard;

@@ -1,24 +1,23 @@
 import { useLoaderData } from "react-router-dom";
-import Container from "../../../Component/Container";
+import Container from "../../Component/Container";
 
-const Details = () => {
+const CollegeDetails = () => {
   const datas = useLoaderData();
   const {
-    image,
     college_name,
     admission_date,
-    event,
-    sports,
     researchers,
     admission_process,
+    sports_facilities,
+    university_events,
   } = datas;
+  
 
   return (
     <div>
       <Container>
         <div className="hero min-h-screen ">
           <div className="hero-content flex-col lg:flex-row">
-            <img src={image} className="w-1/2 rounded-lg shadow-2xl" />
             <div>
               {/* body */}
               <div className="college-card ml-4 rounded-lg overflow-hidden">
@@ -37,31 +36,25 @@ const Details = () => {
                   <p className="list-disc pl-6">{admission_process}</p>
                 </div>
                 <div className="events">
-                  <p className="font-semibold">Upcoming Events:</p>
-                  <ul className="list-disc pl-6">
-                    <li>Annual Cultural Fest - {event[0].annual}</li>
-                    <li>Science and Technology Expo - {event[1].science}</li>
-                  </ul>
+                  <h1 className="font-semibold">University Events:</h1>
+                  <p>{university_events}</p>
+                  
                 </div>
                 <div className="research-history">
                   <p className="font-semibold">Research History:</p>
                   <p>{researchers}</p>
                 </div>
                 <div className="sports">
-                  <p className="font-semibold">Sports:</p>
-                  <p>{sports}</p>
+                  <h1 className="font-semibold">Sports Facilities:</h1>
+                  <p>{sports_facilities}</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </Container>
-
-      {/* <div className="bg-[#ff6900] text-white py-2 px-4 rounded-full inline-block mt-4">
-             
-            </div> */}
     </div>
   );
 };
 
-export default Details;
+export default CollegeDetails;
