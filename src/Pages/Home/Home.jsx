@@ -8,6 +8,15 @@ const Home = () => {
             <HeroSection></HeroSection>
             {/* Header Section */}
             <HeaderSection></HeaderSection>
+
+
+          
+            
+ 
+
+
+
+
         
         </div>
     );

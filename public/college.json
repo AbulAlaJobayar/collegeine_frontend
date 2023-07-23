@@ -1,0 +1,134 @@
+[
+    {
+        "image": "https://i.ibb.co/qrLTjT9/beth-macdonald-ZK5-UNAWz-Qgs-unsplash-1500x1000.jpg",
+        "college_name": "Harvard University",
+        "admission_date": [
+            {
+                " spring": "January 15 - February 28"
+            },
+            {
+                " fall ": "January 15 - February 28"
+            }
+        ],
+        "event": [
+            {
+                "annual": " September 15-17"
+            },
+            {
+                "science": " March 20-22"
+            }
+        ],
+        "researchers": "Our college has a rich tradition of groundbreaking research across various fields, ranging from environmental sciences to artificial intelligence.",
+        "sports": "We take pride in our excellent sports programs, nurturing talent, and fostering a strong sporting spirit among students. From basketball to soccer, we have it all!"
+    },
+    {
+        "image": "https://i.ibb.co/DkWp85P/emily-karakis-T-t-Vt4xs-Cd-E-unsplash-1500x1000.jpg",
+        "college_name": "Stanford University",
+        "admission_date": [
+            {
+                " spring": "January 15 - February 28"
+            },
+            {
+                " fall ": "January 15 - February 28"
+            }
+        ],
+        "event": [
+            {
+                "annual": " September 15-17"
+            },
+            {
+                "science": " March 20-22"
+            }
+        ],
+        "researchers": "Our college has a rich tradition of groundbreaking research across various fields, ranging from environmental sciences to artificial intelligence.",
+        "sports": "We take pride in our excellent sports programs, nurturing talent, and fostering a strong sporting spirit among students. From basketball to soccer, we have it all!"
+    },
+    {
+        "image": "https://i.ibb.co/j3dFB9M/pascal-bernardon-d-Lifk-Lvc5t8-unsplash-1500x1000.jpg",
+        "college_name": "Oxford University",
+        "admission_date": [
+            {
+                " spring": "January 15 - February 28"
+            },
+            {
+                " fall ": "January 15 - February 28"
+            }
+        ],
+        "event": [
+            {
+                "annual": " September 15-17"
+            },
+            {
+                "science": " March 20-22"
+            }
+        ],
+        "researchers": "Our college has a rich tradition of groundbreaking research across various fields, ranging from environmental sciences to artificial intelligence.",
+        "sports": "We take pride in our excellent sports programs, nurturing talent, and fostering a strong sporting spirit among students. From basketball to soccer, we have it all!"
+    },
+    {
+        "image": "https://i.ibb.co/qCm70wx/pascal-bernardon-jxqsyyb-T9-JY-unsplash-1500x1000.jpgx1000.jpg",
+        "college_name": "Massachusetts Institute of Technology (MIT)",
+        "admission_date": [
+            {
+                " spring": "January 15 - February 28"
+            },
+            {
+                " fall ": "January 15 - February 28"
+            }
+        ],
+        "event": [
+            {
+                "annual": " September 15-17"
+            },
+            {
+                "science": " March 20-22"
+            }
+        ],
+        "researchers": "Our college has a rich tradition of groundbreaking research across various fields, ranging from environmental sciences to artificial intelligence.",
+        "sports": "We take pride in our excellent sports programs, nurturing talent, and fostering a strong sporting spirit among students. From basketball to soccer, we have it all!"
+    },
+    {
+        "image": "https://i.ibb.co/Ht0Dxy6/sandip-roy-ei-Ulz-Miiin8-unsplash-1-1500x1000.jpg",
+        "college_name": "University of Cambridge",
+        "admission_date": [
+            {
+                " spring": "January 15 - February 28"
+            },
+            {
+                " fall ": "January 15 - February 28"
+            }
+        ],
+        "event": [
+            {
+                "annual": " September 15-17"
+            },
+            {
+                "science": " March 20-22"
+            }
+        ],
+        "researchers": "Our college has a rich tradition of groundbreaking research across various fields, ranging from environmental sciences to artificial intelligence.",
+        "sports": "We take pride in our excellent sports programs, nurturing talent, and fostering a strong sporting spirit among students. From basketball to soccer, we have it all!"
+    },
+    {
+        "image": "https://i.ibb.co/G3GBtc7/somesh-kesarla-suresh-h-Wqr-I3-Cy-Pu-M-unsplash-1500x1000.jpg",
+        "college_name": "University of California, Berkeley",
+        "admission_date": [
+            {
+                " spring": "January 15 - February 28"
+            },
+            {
+                " fall ": "January 15 - February 28"
+            }
+        ],
+        "event": [
+            {
+                "annual": " September 15-17"
+            },
+            {
+                "science": " March 20-22"
+            }
+        ],
+        "researchers": "Our college has a rich tradition of groundbreaking research across various fields, ranging from environmental sciences to artificial intelligence.",
+        "sports": "We take pride in our excellent sports programs, nurturing talent, and fostering a strong sporting spirit among students. From basketball to soccer, we have it all!"
+    }
+]

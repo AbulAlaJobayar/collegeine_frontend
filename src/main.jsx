@@ -7,6 +7,7 @@ import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login";
 import SignUp from "./Pages/SignUp/SignUp";
 import AuthProvider from "./Providers/AuthProvider";
+import Details from "./Pages/Home/HeaderSection/Details";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,7 +24,14 @@ const router = createBrowserRouter([
       {
         path:"/signup",
         element:<SignUp></SignUp>
-      }
+      },
+      
+        {
+          path:'/viewdetails/:id',
+          element:<Details></Details>,
+          loader:({params})=>fetch(`http://localhost:5000/postdata/${params.id}`)
+        },
+      
     ]
   },
 ]);

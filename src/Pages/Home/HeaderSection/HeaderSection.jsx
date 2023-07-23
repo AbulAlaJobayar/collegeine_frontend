@@ -17,7 +17,7 @@ const HeaderSection = () => {
             type="text"
             placeholder="Search"
             onChange={inputHandler}
-            className="input input-bordered w-24 md:w-auto"
+            className="input input-bordered border-[#ff6900] border-2 w-24 md:w-auto font-bold"
           />
         </div>
         <HeaderData inputText={inputText}></HeaderData>
