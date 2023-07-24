@@ -55,7 +55,7 @@ const AdmitDetail = () => {
       review: "pending",
     };
 
-    fetch("http://localhost:5000/postdata", {
+    fetch("https://collegeine-backend.vercel.app/postdata", {
       method: "POST",
       headers: {
         "content-type": "application/json",

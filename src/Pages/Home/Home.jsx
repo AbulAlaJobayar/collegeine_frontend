@@ -1,3 +1,4 @@
+import FeedbackSection from "./FeedbackSection/FeedbackSection";
 import GallarySection from "./GallarySection/GallarySection";
 import HeaderSection from "./HeaderSection/HeaderSection";
 import HeroSection from "./HeroSection/HeroSection";
@@ -14,6 +15,7 @@ const Home = () => {
             <GallarySection></GallarySection>
             {/* Reachers section */}
             <ReachersSection></ReachersSection>
+            <FeedbackSection></FeedbackSection>
 
 
           

@@ -5,7 +5,7 @@ import AdmissionCard from "./AdmissionCard";
 const Admission = () => {
     const [datas, setDatas] = useState([]);
     useEffect(() => {
-      fetch("http://localhost:5000/university")
+      fetch("https://collegeine-backend.vercel.app/university")
         .then((res) => res.json())
         .then((data) => setDatas(data));
     }, []);

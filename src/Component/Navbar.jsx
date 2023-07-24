@@ -2,7 +2,6 @@ import { Link, NavLink } from "react-router-dom";
 import Container from "./Container";
 import { useContext } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
-import avater from "../assets/pngwing.png";
 
 const Navbar = () => {
   const { user,logOut } = useContext(AuthContext);
@@ -103,7 +102,10 @@ const Navbar = () => {
 
               {user ? (
                 <>
-                  <img
+                <Link to="profile">
+                <h1 className="font-semibold capitalize">{user && user.displayName}</h1>
+                </Link>
+                  {/* <img
                     className="rounded-full border-2"
                     src={user && user.photoURL ? user.photoURL : avater}
                     alt="profile"
@@ -112,7 +114,7 @@ const Navbar = () => {
                     title={
                       user && user.displayName ? user.displayName : "guest"
                     }
-                  />
+                  /> */}
                   <button className="font-semibold" onClick={logOut}>
                   Logout
                   </button>

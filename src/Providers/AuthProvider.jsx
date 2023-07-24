@@ -1,5 +1,6 @@
 import { createContext, useEffect, useState } from 'react'
 import {
+  GithubAuthProvider,
   GoogleAuthProvider,
   createUserWithEmailAndPassword,
   getAuth,
@@ -17,6 +18,7 @@ export const AuthContext = createContext(null)
 
 const auth = getAuth(app)
 const googleProvider = new GoogleAuthProvider()
+const githubprovider = new GithubAuthProvider()
 
 // eslint-disable-next-line react/prop-types
 const AuthProvider = ({ children }) => {
@@ -37,7 +39,9 @@ const AuthProvider = ({ children }) => {
     setLoading(true)
     return signInWithPopup(auth, googleProvider)
   }
-
+  const singInWithGithub=()=>{
+    return signInWithPopup(auth, githubprovider)
+}
   const resetPassword = email => {
     setLoading(true)
     return sendPasswordResetEmail(auth, email)
@@ -73,6 +77,7 @@ const AuthProvider = ({ children }) => {
     createUser,
     signIn,
     signInWithGoogle,
+    singInWithGithub,
     resetPassword,
     logOut,
     updateUserProfile,

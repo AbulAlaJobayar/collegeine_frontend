@@ -14,7 +14,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 const HeroSection = () => {
   return (
     <>
-     <div className="-z-10">
+     <div className="">
      <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -34,6 +34,7 @@ const HeroSection = () => {
             className="hero min-h-screen"
             style={{
               backgroundImage: "url(https://i.ibb.co/MfDQVwn/first.jpg)",
+              
             }}
           >
             <div className="hero-overlay bg-opacity-60"></div>

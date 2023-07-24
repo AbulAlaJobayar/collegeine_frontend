@@ -16,7 +16,7 @@ import { useEffect, useState } from "react";
 const GallarySection = () => {
   const [datas, setDatas] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/university")
+    fetch("https://collegeine-backend.vercel.app/university")
       .then((res) => res.json())
       .then((data) => setDatas(data));
   }, []);
@@ -37,7 +37,7 @@ const GallarySection = () => {
             </p>
           </div>
           {/* gallery */}
-          <div className="mt-7 md:mt-12">
+          <div className=" md:mt-12">
             <Swiper
               slidesPerView={3}
               spaceBetween={30}

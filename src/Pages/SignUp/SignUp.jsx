@@ -1,16 +1,19 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import toast from 'react-hot-toast'
 import { FcGoogle } from 'react-icons/fc'
+import { FaGithub } from "react-icons/fa";
 import { useContext} from 'react'
 
 import { AuthContext } from '../../Providers/AuthProvider'
 import { LiaSpinnerSolid } from 'react-icons/lia'
+
 
 const SignUp = () => {
   const {
     loading,
     setLoading,
     signInWithGoogle,
+    singInWithGithub,
     createUser,
     updateUserProfile,
   } = useContext(AuthContext)
@@ -18,7 +21,18 @@ const SignUp = () => {
   const location = useLocation()
   const from = location.state?.from?.pathname || '/'
 
-  
+  const handleGithubSignIn = () => {
+    singInWithGithub()
+      .then((result) => {
+        console.log(result.user);
+        navigate(from, { replace: true });
+      })
+      .catch((err) => {
+        setLoading(false);
+        console.log(err.message);
+        toast.error(err.message);
+      });
+  };
   const handleSubmit = event => {
     event.preventDefault()
     const name = event.target.name.value
@@ -181,6 +195,18 @@ const SignUp = () => {
 
           <p>Continue with Google</p>
         </div>
+        
+
+        <div
+          onClick={handleGithubSignIn}
+          className="flex justify-center items-center space-x-2 border m-3 p-2 border-gray-300 border-rounded cursor-pointer"
+        >
+          <FaGithub size={32} />
+
+          <p>Continue with Github</p>
+        </div>
+
+
         <p className='px-6 text-sm text-center text-gray-400'>
           Already have an account?{' '}
           <Link
