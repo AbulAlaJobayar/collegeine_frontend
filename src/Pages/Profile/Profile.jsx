@@ -1,9 +1,9 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import Container from "../../Component/Container";
-import MyCollegeCard from "./MyCollegeCard";
+import ProfileCard from "./ProfileCard";
 
-const MyCollege = () => {
+const Profile = () => {
     const [allclass, setAllClass] = useState([]);
 
     const { user } = useContext(AuthContext);
@@ -14,16 +14,17 @@ const MyCollege = () => {
     }, [user?.email]);
 
     return (
-        <div>
-           <Container>
-                <div>
-                {allclass.slice(0,1).map((item) => (
-            <MyCollegeCard key={item._id} item={item}></MyCollegeCard>
+        <div className="my-20">
+            <Container>
+            <div>
+            {allclass.slice(0,1).map((item) => (
+            <ProfileCard key={item._id} item={item}></ProfileCard>
           ))}
-                </div>
-           </Container>
+            </div>
+            </Container>
         </div>
+        
     );
 };
 
-export default MyCollege;
+export default Profile;

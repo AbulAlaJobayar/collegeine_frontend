@@ -20,7 +20,6 @@ const GallarySection = () => {
       .then((res) => res.json())
       .then((data) => setDatas(data));
   }, []);
-  console.log(datas);
 
   return (
     <div>

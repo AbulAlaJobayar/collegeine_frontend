@@ -13,8 +13,9 @@ import CollegeDetails from "./Pages/College/CollegeDetails";
 import Admission from "./Pages/Admission/Admission";
 import AdmitDetail from "./Pages/Admission/AdmitDetail";
 import MyCollege from "./Pages/MyCollege/MyCollege";
-import PrivateRoute from "./Router/PrivateRouter";
 import ErrorPage from "./Component/ErrorPage/ErrorPage";
+import Profile from "./Pages/Profile/Profile";
+import EditProfile from "./Pages/Profile/EditProfile";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
         element:<MyCollege></MyCollege>
       },
       {
+        path:"/profile",
+        element:<Profile></Profile>
+      },
+      {
         path:"/login",
         element:<Login></Login>
       },
@@ -49,18 +54,23 @@ const router = createBrowserRouter([
       
         {
           path:'/viewdetails/:id',
-          element:<PrivateRoute> <Details></Details></PrivateRoute>,
+          element:<Details></Details>,
           loader:({params})=>fetch(`https://collegeine-backend.vercel.app/postdata/${params.id}`)
         },
         {
           path:'/details/:id',
-          element:<PrivateRoute><CollegeDetails></CollegeDetails></PrivateRoute>,
+          element:<CollegeDetails></CollegeDetails>,
           loader:({params})=>fetch(`https://collegeine-backend.vercel.app/postdata/${params.id}`)
         },
         {
           path:'/admit/:id',
-          element:<PrivateRoute><AdmitDetail></AdmitDetail></PrivateRoute>,
+          element:<AdmitDetail></AdmitDetail>,
           loader:({params})=>fetch(`https://collegeine-backend.vercel.app/postdata/${params.id}`)
+        },
+        {
+          path:'/editprofile/:id',
+          element:<EditProfile></EditProfile>,
+          loader:({params})=>fetch(`https://collegeine-backend.vercel.app/studentdata/${params.id}`)
         },
       
     ]

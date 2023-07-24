@@ -118,7 +118,6 @@ const AdmitDetail = () => {
                 defaultValue={user?.email}
                 placeholder="email"
                 className="input input-bordered"
-                readOnly
               />
             </div>
 

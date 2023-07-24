@@ -11,6 +11,7 @@ import "./styles.css";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Link } from "react-router-dom";
 const HeroSection = () => {
   return (
     <>
@@ -47,7 +48,11 @@ const HeroSection = () => {
                   network of esteemed institutions, each offering its unique
                   strengths and programs. 
                 </p>
-                <button className="btn bg-[#ff6900] hover:bg-[#ca5400] text-white">Get Started</button>
+                <button className="btn bg-[#ff6900] hover:bg-[#ca5400] text-white">
+                  <Link to="/admission">
+                  Get Started
+                  </Link>
+                </button>
               </div>
             </div>
           </div>
@@ -69,7 +74,11 @@ const HeroSection = () => {
                   network of esteemed institutions, each offering its unique
                   strengths and programs. 
                 </p>
-                <button className="btn bg-[#ff6900] hover:bg-[#ca5400] text-white">Get Started</button>
+                <button className="btn bg-[#ff6900] hover:bg-[#ca5400] text-white">
+                  <Link to="/admission">
+                  Get Started
+                  </Link>
+                </button>
               </div>
             </div>
           </div>
@@ -91,7 +100,11 @@ const HeroSection = () => {
                   network of esteemed institutions, each offering its unique
                   strengths and programs. 
                 </p>
-                <button className="btn bg-[#ff6900] hover:bg-[#ca5400] text-white">Get Started</button>
+                <button className="btn bg-[#ff6900] hover:bg-[#ca5400] text-white">
+                  <Link to="/admission">
+                  Get Started
+                  </Link>
+                </button>
               </div>
             </div>
           </div>

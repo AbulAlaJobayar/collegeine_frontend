@@ -9,7 +9,7 @@ const College = () => {
       .then((res) => res.json())
       .then((data) => setDatas(data));
   }, []);
-  console.log(datas);
+  
   return (
     <div>
       <div className=" bg-neutral-100 w-full h-60 flex justify-center items-center">

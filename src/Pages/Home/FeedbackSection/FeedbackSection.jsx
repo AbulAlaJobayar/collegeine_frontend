@@ -4,11 +4,12 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "./styles.css";
 import { EffectCoverflow, Pagination } from "swiper/modules";
-import Container from "../../../Component/Container";
+
 import { useEffect, useState } from "react";
 import { Rating } from '@smastrom/react-rating'
 
 import '@smastrom/react-rating/style.css'
+import Container from "../../../Component/Container";
 const FeedbackSection = () => {
   const [datas, setDatas] = useState([]);
   useEffect(() => {
@@ -16,7 +17,6 @@ const FeedbackSection = () => {
       .then((res) => res.json())
       .then((data) => setDatas(data));
   }, []);
-  console.log({ datas });
 
   return (
     <>
@@ -65,31 +65,7 @@ const FeedbackSection = () => {
                     
                   </div>
 
-                  {/* <div className="card w-full bg-base-100 mx-5  pt-20">
-                      <div className="card-body ">
-                        <h2 className="card-title mb-5">
-                          What a great store for the entire <br /> family! My
-                          kids love this place <br /> because of the toys!
-                        </h2>
-                        <div className="flex items-center gap-4">
-                          <div>
-                            <img
-                              src="https://i.ibb.co/XCxDGQx/face-g8a8ddad52-640.jpg"
-                              className="w-20 h-20 rounded-full"
-                              alt=""
-                            />
-                          </div>
-                          <div>
-                            <h1 className="text-2xl font-bold text-[#181D4E]">
-                              Mandy Mathers
-                            </h1>
-                            <p className="text-lg  text-[#373e7e]">
-                              CEO, Business Co
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div> */}
+                  
                 </SwiperSlide>
               ))}
             </Swiper>

@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 const HeaderCard = ({item}) => {
-    console.log(item)
     const {image,_id,college_name,admission_date,event,sports,researchers}=item
     
   return (
